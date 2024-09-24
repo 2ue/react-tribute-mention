@@ -20,7 +20,10 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "package.json",
+    "LICENSE",
+    "README.md"
   ],
   "scripts": {
     "dev": "vite --config vite.docs.config.ts",
