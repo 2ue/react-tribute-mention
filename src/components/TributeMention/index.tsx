@@ -21,7 +21,7 @@ type Item = Record<string, any>;
 
 interface Props {
   value?: string
-  onChange?: (value: string, rawValue:) => void
+  onChange?: (value: string, rawValue: string) => void
   loadItems?: Item[] | Promise<Item[]> | ((searchText: string) => (Promise<Item[]> | Item[]))
   placeholder?: string
   className?: string
