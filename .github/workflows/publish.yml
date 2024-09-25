@@ -93,7 +93,7 @@ jobs:
       - name: Commit and push Version
         run: |
           git add package.json
-          git commit -m "feat:Bump version to ${{ env.TAG_NAME }}"
+          git commit -m "feat: Bump version to ${{ env.TAG_NAME }}"
           git tag -a "${{ env.TAG_NAME }}" -m "Release ${{ env.TAG_NAME }}"
           git push origin main
 
