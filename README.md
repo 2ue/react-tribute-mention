@@ -4,6 +4,18 @@
 
 > ps：由于需要支持@xx的整块删除，所以使用`<div contentEditable></div>`作为输入框
 
+## Install
+
+``` shell
+# 选择你喜欢的包管理器进行安装
+npm i -S react-tribute-mention
+# or
+yarn add -S react-tribute-mention
+# or
+pnpm add -S react-tribute-mention
+
+```
+
 ## Useage
 
 ``` jsx

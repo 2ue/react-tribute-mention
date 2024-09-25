@@ -11,7 +11,7 @@ import type { UserConfig } from 'vite'
 export default mergeConfig(baseConfig, {
   plugins: [
     pages({
-      pagesDir: path.join(__dirname, 'docs/pages'),
+      pagesDir: path.join(__dirname, 'docs-demo/pages'),
       pageStrategy: new DefaultPageStrategy({
         extraFindPages: async (pagesDir, helpers) => {
           const srcPath = path.join(__dirname, './src')
@@ -55,6 +55,6 @@ export default mergeConfig(baseConfig, {
     }),
   ],
   build: {
-    outDir: 'dist-docs',
+    outDir: 'docs',
   },
 } as UserConfig)
