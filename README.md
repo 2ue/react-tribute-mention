@@ -109,7 +109,7 @@ interface Props {
 
 ## Feature
 
-- [] 支持`@xxx`块的自定义渲染模块样式
-- [] 支持`focus`等事件
-- [] 支持`placeholder`等样式更灵活修改
-- [] 原生支持更多`tributejs`的属性
+- [ ] 支持`@xxx`块的自定义渲染模块样式
+- [ ] 支持`focus`等事件
+- [ ] 支持`placeholder`等样式更灵活修改
+- [ ] 原生支持更多`tributejs`的属性
