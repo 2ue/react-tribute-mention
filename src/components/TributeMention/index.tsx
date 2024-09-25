@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import Tribute from 'tributejs';
-import './index.less';
 import { isNull } from 'jia-tools';
 import cx from 'classnames';
 import {
@@ -11,6 +10,7 @@ import {
   itemTemplate,
   DEFAULT_FIELD_KEYS,
 } from './utils';
+import './index.less';
 
 interface FieldKeys {
   label?: string
@@ -21,7 +21,7 @@ type Item = Record<string, any>;
 
 interface Props {
   value?: string
-  onChange?: (value: string, rawValue: string) => void
+  onChange?: (value: string, rawValue:) => void
   loadItems?: Item[] | Promise<Item[]> | ((searchText: string) => (Promise<Item[]> | Item[]))
   placeholder?: string
   className?: string
