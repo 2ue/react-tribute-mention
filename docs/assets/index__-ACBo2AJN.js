@@ -1,4 +1,4 @@
-import{p as c}from"./_-FU1-d8Ot.js";import{u as s,j as e}from"./index-BQUaEorO.js";function i(t){const n={blockquote:"blockquote",code:"code",h1:"h1",h2:"h2",h3:"h3",input:"input",li:"li",p:"p",pre:"pre",ul:"ul",...s(),...t.components};return e.jsxs(e.Fragment,{children:[e.jsx(n.h1,{id:"react-tribute-mention",children:"React-Tribute-Mention"}),`
+import{p as c}from"./_-FU1-d8Ot.js";import{u as s,j as e}from"./index-DLfFFpFH.js";function i(t){const n={blockquote:"blockquote",code:"code",h1:"h1",h2:"h2",h3:"h3",input:"input",li:"li",p:"p",pre:"pre",ul:"ul",...s(),...t.components};return e.jsxs(e.Fragment,{children:[e.jsx(n.h1,{id:"react-tribute-mention",children:"React-Tribute-Mention"}),`
 `,e.jsxs(n.blockquote,{children:[`
 `,e.jsx(n.p,{children:"一个基于tributejs的react组件，并且支持对@xx整块删除"}),`
 `]}),`

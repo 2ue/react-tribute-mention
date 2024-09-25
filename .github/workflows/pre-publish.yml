@@ -54,7 +54,6 @@ jobs:
               - README.md
               - package.json
               - vite.base.config.js
-              - vite.docs.config.js
               - vite.lib.config.js
               - tsconfig.json
               - tsconfig.node.json

@@ -57,4 +57,5 @@ export default mergeConfig(baseConfig, {
   build: {
     outDir: 'docs',
   },
+  base: './'
 } as UserConfig)
