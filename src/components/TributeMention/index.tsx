@@ -21,16 +21,15 @@ type Item = Record<string, any>;
 
 interface Props {
   value?: string
-  onChange?: (value: string) => void
+  onChange?: (value: string, rawValue: string) => void
   loadItems?: Item[] | Promise<Item[]> | ((searchText: string) => (Promise<Item[]> | Item[]))
   placeholder?: string
   className?: string
   style?: React.CSSProperties
   height?: string
   width?: string
-  enableLocalSearch?: boolean
-  tributeOptions?: Record<string, any>
   fieldKeys?: FieldKeys
+  tributeOptions?: Record<string, any>
 }
 
 export function TributeMention(props: Props) {
@@ -107,7 +106,7 @@ export function TributeMention(props: Props) {
         moveCursorToEnd(inputRef.current!);
       }
       console.log('input', transformTagTextToText(innerHTML));
-      props.onChange?.(transformTagTextToText(innerHTML));
+      props.onChange?.(transformTagTextToText(innerHTML), innerHTML);
     }}
   />;
 }
