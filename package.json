@@ -1,7 +1,7 @@
 {
   "name": "react-tribute-mention",
   "type": "module",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "packageManager": "pnpm@9.8.0",
   "description": "a mention component based on tributejs",
   "author": {
