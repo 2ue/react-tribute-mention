@@ -7,7 +7,7 @@ export const DEFAULT_FIELD_KEYS = {
 
 export function itemTemplate(label: string, value: string) {
   // contenteditable设置为false能实现整个删除，嵌套两层是为了解决如果contenteditable为false的元素在末尾，会导致光标消失
-  return `<span class="tribute-mention-text-tag" data-mention-id="${value}"><strong contenteditable="false">@${label}</strong></span>`;
+  return `<span class="tribute-mention-text-tag" data-value="${value}"><strong contenteditable="false">@${label}</strong></span>`;
 }
 
 /**
@@ -16,7 +16,7 @@ export function itemTemplate(label: string, value: string) {
 export function transformTextToTagText(text: string) {
   if (isNull(text)) return '';
   // 使用正则表达式匹配 @[名字](id) 格式的文本
-  const regex = /@\[([^\]]+)\]\((\d+)\)/g;
+  const regex = /@\[([^\]]+)\]\((\s+)\)/g;
   return text.replace(regex, (match, p1, p2) => itemTemplate(p1, p2));
 }
 
@@ -24,7 +24,7 @@ export function transformTextToTagText(text: string) {
 export function transformTagTextToText(text: string) {
   if (isNull(text)) return '';
   // 使用正则表达式匹配 @[名字](id) 格式的文本
-  const regex = /<span[^>]*data-mention-id="(\d+)"><strong[^>]*>@([^\s]+)<\/strong><\/span>(&nbsp;)?/g;
+  const regex = /<span[^>]*data-value="(\s+)"><strong[^>]*>@([^\s]+)<\/strong><\/span>(&nbsp;)?/g;
   return text.replace(regex, (match, p1, p2) => `@[${p2}](${p1})`);
 }
 

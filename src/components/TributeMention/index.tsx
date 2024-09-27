@@ -63,7 +63,6 @@ export function TributeMention(props: Props) {
       lookup: item => item[labelKey] + item[valueKey],
       // 下拉提示框样式
       menuItemTemplate(item) {
-        console.log('labelKey', labelKey, valueKey);
         return `${item.original[labelKey]}(${item.original[valueKey]})`;
       },
       selectTemplate(item) {
